@@ -1172,6 +1172,7 @@ ORG-JIRA-PROJ-KEY-OVERRIDE being set before and after running."
                                                      (if (org-goto-first-child)
                                                          (org-insert-heading)
                                                        (goto-char (point-max))
+                                                       (open-line 1)
                                                        (org-insert-subheading t))
                                                      (org-jira-insert entry-heading "\n"))
 
